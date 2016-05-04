@@ -8,7 +8,9 @@ function init() {
   function errorHandler(e) {
     StackTrace.fromError(e).then((x)=>Crashlytics.recordCustomExceptionName(e.message, e.message, x));
     // And then re-throw the exception with the original handler
-    originalHandler(e);
+    if (originalHandler) {
+      originalHandler(e);
+    }
   }
   global.ErrorUtils.setGlobalHandler(errorHandler);
 }
