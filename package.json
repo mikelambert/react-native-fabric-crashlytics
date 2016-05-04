@@ -1,5 +1,5 @@
 {
-  "name": "react-native-crashlytics-reporter",
+  "name": "react-native-fabric-crashlytics",
   "version": "0.1.0",
   "description": "",
   "main": "index.js",
@@ -10,11 +10,11 @@
     "index.js"
   ],
   "bugs": {
-    "url": "https://github.com/mikelambert/react-native-crashlytics-reporter/issues"
+    "url": "https://github.com/mikelambert/react-native-fabric-crashlytics/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/mikelambert/react-native-crashlytics-reporter.git"
+    "url": "git+ssh://git@github.com/mikelambert/react-native-fabric-crashlytics.git"
   },
   "maintainers": [
     {
