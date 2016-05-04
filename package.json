@@ -1,6 +1,6 @@
 {
   "name": "react-native-crashlytics-reporter",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -9,10 +9,34 @@
   "files": [
     "index.js"
   ],
+  "bugs": {
+    "url": "https://github.com/mikelambert/react-native-crashlytics-reporter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mikelambert/react-native-crashlytics-reporter.git"
+  },
+  "maintainers": [
+    {
+      "email": "mlambert@gmail.com",
+      "name": "Mike Lambert"
+    }
+  ],
+  "keywords": [
+    "react-native",
+    "react-component",
+    "react-native-component",
+    "react",
+    "mobile",
+    "ios",
+    "android",
+    "fabric",
+    "crashlytics"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react-native-fabric": "^0.1.0",
+    "react-native-fabric": "git://github.com/corymsmith/react-native-fabric.git",
     "stacktrace-js": "^1.1.0"
   }
 }
