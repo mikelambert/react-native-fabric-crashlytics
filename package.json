@@ -1,6 +1,6 @@
 {
   "name": "react-native-fabric-crashlytics",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -36,7 +36,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "react-native-fabric": "git://github.com/corymsmith/react-native-fabric.git",
+    "react-native-fabric": "^0.2.0",
     "stacktrace-js": "^1.1.0"
   }
 }
