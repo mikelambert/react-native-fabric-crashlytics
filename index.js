@@ -12,7 +12,14 @@ function init() {
 
   var originalHandler = global.ErrorUtils.getGlobalHandler();
   function errorHandler(e, isFatal) {
-    StackTrace.fromError(e, {offline: true}).then((x)=>Crashlytics.recordCustomExceptionName(e.message, e.message, x));
+    StackTrace.fromError(e, {offline: true}).then((x) => {
+      Crashlytics.recordCustomExceptionName(e.message, e.message, x.map((row) => ({
+        fileName: `${row.fileName}:${row.lineNumber || 0}:${row.columnNumber || 0}`,
+        columnNumber: row.columnNumber,
+        lineNumber: row.lineNumber,
+        functionName: row.functionName,
+      })))
+    });
     // And then re-throw the exception with the original handler
     if (originalHandler) {
       originalHandler(e, isFatal);
