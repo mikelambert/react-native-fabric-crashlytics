@@ -36,6 +36,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "lodash.assign": "^4.2.0",
     "stacktrace-js": "^1.1.0"
   },
   "peerDependencies": {
