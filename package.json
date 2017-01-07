@@ -40,6 +40,6 @@
     "stacktrace-js": "^1.1.0"
   },
   "peerDependencies": {
-    "react-native-fabric": "^0.3.0"
+    "react-native-fabric": "*"
   }
 }
